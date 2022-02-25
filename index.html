@@ -2,13 +2,58 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
 <script src="https://unpkg.com/f0js@0.0.15/dist/f0.js"></script>
 <script src="https://unpkg.com/@walletconnect/web3-provider/dist/umd/index.min.js"></script>
 <script src="https://unpkg.com/web3modal@1.9.5/dist/index.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="connect.js"></script>
 <script id="template" type="text/x-handlebars-template">
+
+  <nav id ="navbar">
+    <div class="brand-title"><img src="https://res.cloudinary.com/dunpwflsw/image/upload/v1645576412/tempologo_ethkej.png" width="150"></div>
+     <div class="navbar-links">
+       <ul>
+         <li><a href="#About">About</a></li>
+         <li><a href="#Howitworks">How it Works</a></li>
+         <li><a href="#Mint">Mint</a></li>
+       </ul>    
+     </div>
+  </nav>
+  <div id="main-section">
+  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_mriqekmt.json" background="transparent"  speed="1"  style="width: 900px; height: 900px;" loop autoplay></lottie-player>
+  <div class="bigger-text">Reimagining the way athletes become sponsored</div>
+  </div>
+  <div id="container2">
+      <div class="embeddedcontainer">
+      <h2 id="About">Supporters purchase membership NFTs </h2>
+        <h1> and get direct access to community governance, exclusive merchandise, and curated experiences with professional athletes in athletics
+   </h1> 
+        </div>
+      <div class="photo-box">
+            <div class="blue-line"></div>
+             <div class="bottom-membership">
+              <img src="https://res.cloudinary.com/dunpwflsw/image/upload/v1645576412/tempologo_ethkej.png" width="100">
+      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_mriqekmt.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>  </div>
+        <p id="small-text"> CERTIFIED MEMBER </p>
+  </div>
+      </div>
+      <div id="membership-main">
+      <div class="membership-left">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_lqge6px5.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop autoplay></lottie-player>
+      </div>
+    <div class="membership-right">
+      <h2 id="Howitworks">Membership revenue will go toward a community treasury where supporters </h2>
+        <h1> earn the right to vote on which rising the star the community should sponsor, hosting professional  meets, and other community driven proposals
+   </h1>
+        </div>
+         </div>
+  <div class="bright-box">
+   <div id="box3">
+    <h2 id="Mint"> Build new opportunities for athletes to shine on the brightest stage
+    </h2>
   <img src="{{image}}">
   <h1>{{title}}</h1>
   {{#if table}}
@@ -27,6 +72,40 @@
   {{/each}}
   </table>
   {{/if}}
+</div>
+</div>
+<div id="faq">
+<h2>FAQ</h2>
+<div class="faq-comment">
+<strong><h3>What's an NFT?</h3></strong>
+<p>A non-fungible token is a unique and non-interchangeable unit of data stored on a digital ledger. NFTs can be used to represent easily-reproducible items such as photos, videos, audio, and other types of digital files as unique items, and use blockchain technology to establish a verified and public proof of ownership</p>
+  <strong><h3>How do I purchase a TempoDAO membership?</h3></strong>
+<p>You will need to buy Ether(ETH) the cryptocurrency of Ethereum on a trusted crypto exchange. Once you purchase ETH, set up a virtual currency wallet (we recommend MetaMask). </p>
+  <strong><h3>What will the proceeds of the membership fund?</h3></strong>
+<p>The proceeds will directly go towards funding TempoDAO operations, including, but not limited to:</p>
+  <ul>
+    <li>Operational Committee, including the planning and coordination of hosting professional meets</li>
+    <li> Legal, compliance, and accounting</li>
+    <li>Marketing, athlete partnerships, and sales</li>
+    <li>Engineering</li>
+    <li>Community Development</li>
+    <li>Sustaining community approved DAO initiatives</li>
+  </ul>
+  <strong><h3>How do members participate in community governance?</h3></strong>
+<p>All TempoDAO membership holders will have access to propose initiatives and vote on governance related items through Snapshot.</p>
+  <strong><h3>What is the legal structure of TempoDAO?</h3></strong>
+<p>TempoDAO is a registered DAO LLC in Wyoming and possesses the legal protections vested within the Wyoming legislature extended to all DAO members.</p>
+ <strong><h3>How do I purchase a membership NFT after the initial memberships are minted?</h3></strong> 
+<p>You can find TempoDAO membership NFTs on secondary markets including OpenSea and Rarible.</p>
+<strong><h3>What rights will TempoDAO membership holders have?</h3></strong>  
+<p>The proposal and approval of non-financial TempoDAO matters, including, but not limited to:</p>
+  <ul>
+    <li>Professional meet location selection process and approval, as proposed by the relevant operating committee</li>
+    <li>Internal culture, activities, and vision</li>
+    <li>Selecting athletes to sponsor and represent the mission of TempoDAO in professional meets</li>
+  </ul>
+</div> 
+</div>
 </script>
 <script>
 const template = Handlebars.compile(document.querySelector("#template").innerHTML);

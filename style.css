@@ -1,15 +1,8 @@
 body {
-  font-family: Sans-serif;
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(131,58,180);
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  color: white;
-  height: 100%;
-}
+  font-family:'Nunito Sans', sans-serif;
+    font-size: 16px;
+    background-color: #ECEBE9;
+  }
 .error {
   text-align: left;
   max-width: 400px;
@@ -20,10 +13,174 @@ body {
   word-wrap: break-word;
   font-family: Menlo, monaco;
 }
+#navbar {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black
+}
+
+.brand-title {
+  font-family:'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+}
+  
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+   text-decoration: none;
+   color: black;
+   padding: 1rem;
+   display: block;
+}
+
+.navbar-links li:hover {
+  background-color: white;
+}
+  .bigger-text {
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 24px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    }
+ #small-text {
+    padding: 10px;
+  }
+  
+  #bm {
+    width: 800px;
+  }
+  #main-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #container2 {
+    min-width: 100%;
+    background-color: #8FEEDB;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .embeddedcontainer {
+    width: 50%;
+  }
+  .photo-box {
+    position: relative;
+    margin-right: 100px;
+    width: 375px;
+    height: 250px;
+    border-radius: 3%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(213,213,213,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    animation-name: photo-box;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+    @keyframes photo-box {
+      0% {
+          transform: skew(-1deg, 5deg);
+      }
+      100% {
+          transform: skew(5deg, -1deg, 40deg);
+      }
+    }
+    
+.blue-line {
+  width: 325px;
+  height: 2px;
+  margin-top: 60px;
+  background-color: #3181DC;
+}
+
+.bottom-membership {
+   font-family: 'Nunito Sans', sans-serif;
+   font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#membership-main {
+    min-width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 150px;
+
+}
+.membership-left {
+    width: 50%;
+  }
+.membership-right {
+  margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 350px;
+    border-radius: 3%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(213,213,213,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 90px;
+
+}   
+
+.bright-box {
+    min-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 150px;
+  color: white;
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    
+  }
 .box {
-  max-width: 300px;
+  min-width: 100%;
+}
+
+#box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
+
+#faq {
+margin-left: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.faq-comment {
+width: 750px;
+text-align: left;
+}
+
 .box > *, .minter > *{
   display: block;
   width: 100% !important;
@@ -64,6 +221,19 @@ h1 {
 h1 a {
   color: white;
 }
+
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+      font-size: 34px;
+}
+h2 a {
+  color: white;
+}
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+      font-size: 24px;
+}
+
 .invite {
   overflow-wrap: break-word;
   word-wrap: break-word;
